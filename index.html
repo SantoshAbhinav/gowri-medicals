@@ -39,7 +39,7 @@
   <div class="announcement">
     <span class="announcement-dot"></span>
     <span data-i18n="announcement">బలగ మెట్టు ప్రజలకు శుభవార్త — గౌరి మెడికల్స్ మీకు మరింత చేరువలో!</span>
-    <a href="#booking" data-i18n="announcementCta">ఆర్డర్ చేయండి <span aria-hidden="true">↗</span></a>
+    <a href="#orderForm" data-i18n="announcementCta">ఆర్డర్ చేయండి <span aria-hidden="true">↗</span></a>
   </div>
 
   <header class="site-header">
@@ -49,7 +49,9 @@
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#services" data-i18n="navServices">మా సేవలు</a>
-      <a href="#booking" data-i18n="navBooking">WhatsApp ఆర్డర్</a>
+      <a href="#orderForm" data-i18n="navBooking">WhatsApp ఆర్డర్</a>
+      <a href="#monthly-delivery" data-i18n="navMonthly">నెలవారీ డెలివరీ</a>
+      <a href="#payment" data-i18n="navPayment">చెల్లింపు</a>
       <a href="#location" data-i18n="navLocation">చిరునామా</a>
       <a href="#contact" data-i18n="navContact">సంప్రదించండి</a>
     </nav>
@@ -60,7 +62,7 @@
       <button class="mobile-menu" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="#services" data-i18n="navServices">మా సేవలు</a><a href="#booking" data-i18n="navBooking">WhatsApp ఆర్డర్</a><a href="#location" data-i18n="navLocation">చిరునామా</a><a href="#contact" data-i18n="navContact">సంప్రదించండి</a>
+      <a href="#services" data-i18n="navServices">మా సేవలు</a><a href="#orderForm" data-i18n="navBooking">WhatsApp ఆర్డర్</a><a href="#monthly-delivery" data-i18n="navMonthly">నెలవారీ డెలివరీ</a><a href="#payment" data-i18n="navPayment">చెల్లింపు</a><a href="#location" data-i18n="navLocation">చిరునామా</a><a href="#contact" data-i18n="navContact">సంప్రదించండి</a>
     </nav>
   </header>
 
@@ -71,7 +73,7 @@
         <h1 data-i18n="heroTitle">మీ ఆరోగ్యానికి<br><em>నమ్మకమైన చిరునామా.</em></h1>
         <p class="hero-description" data-i18n="heroDescription">మీకు అవసరమైన మందులు, రోజువారీ ఆరోగ్య సంరక్షణ ఉత్పత్తులు మరియు స్నేహపూర్వక ఫార్మసీ సేవలు — ఇప్పుడు మీకు మరింత చేరువలో.</p>
         <div class="hero-buttons">
-          <a class="button button-primary" href="#booking"><span data-i18n="heroPrimary">మందుల ఆర్డర్ పంపండి</span><span class="button-arrow">↗</span></a>
+          <a class="button button-primary" href="#orderForm"><span data-i18n="heroPrimary">మందుల ఆర్డర్ పంపండి</span><span class="button-arrow">↗</span></a>
           <a class="button button-quiet" href="tel:+919989105144"><span class="phone-glyph">⌕</span><span data-i18n="heroCall">కాల్ చేయండి</span><strong>99891 05144</strong></a>
         </div>
         <div class="hero-proof"><span class="proof-check">✓</span><span data-i18n="heroProof">WhatsApp ద్వారా సులభమైన ఆర్డర్ అభ్యర్థన</span></div>
@@ -95,10 +97,10 @@
         <p data-i18n="servicesIntro">మందులు లేదా ఆరోగ్య సంరక్షణ ఉత్పత్తుల లభ్యత గురించి మాతో మాట్లాడండి. మీ అవసరాన్ని తెలియజేయడానికి WhatsApp ఆర్డర్ ఫారమ్ ఉపయోగించండి.</p>
       </div>
       <div class="service-grid">
-        <article class="service-card"><div class="service-card-top"><span class="service-icon">✚</span><span>01 / 04</span></div><h3 data-i18n="serviceOneTitle">మందులు</h3><p data-i18n="serviceOneText">వైద్యుల ప్రిస్క్రిప్షన్ ప్రకారం అవసరమైన మందుల లభ్యత గురించి అడగండి.</p><a href="#booking" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
-        <article class="service-card"><div class="service-card-top"><span class="service-icon">♡</span><span>02 / 04</span></div><h3 data-i18n="serviceTwoTitle">హెల్త్‌కేర్ అవసరాలు</h3><p data-i18n="serviceTwoText">రోజువారీ ఆరోగ్య సంరక్షణకు ఉపయోగపడే ఉత్పత్తుల గురించి తెలుసుకోండి.</p><a href="#booking" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
-        <article class="service-card"><div class="service-card-top"><span class="service-icon">⌂</span><span>03 / 04</span></div><h3 data-i18n="serviceThreeTitle">బేబీ &amp; పర్సనల్ కేర్</h3><p data-i18n="serviceThreeText">బేబీ కేర్, పరిశుభ్రత మరియు వ్యక్తిగత సంరక్షణ ఉత్పత్తుల లభ్యత అడగండి.</p><a href="#booking" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
-        <article class="service-card"><div class="service-card-top"><span class="service-icon">▤</span><span>04 / 04</span></div><h3 data-i18n="serviceFourTitle">నిరంతర మందుల అవసరాలు</h3><p data-i18n="serviceFourText">BP, డయాబెటిస్ వంటి దీర్ఘకాలిక అవసరాల మందుల లభ్యత గురించి సంప్రదించండి.</p><a href="#booking" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
+        <article class="service-card"><div class="service-card-top"><span class="service-icon">✚</span><span>01 / 04</span></div><h3 data-i18n="serviceOneTitle">మందులు</h3><p data-i18n="serviceOneText">వైద్యుల ప్రిస్క్రిప్షన్ ప్రకారం అవసరమైన మందుల లభ్యత గురించి అడగండి.</p><a href="#orderForm" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
+        <article class="service-card"><div class="service-card-top"><span class="service-icon">♡</span><span>02 / 04</span></div><h3 data-i18n="serviceTwoTitle">హెల్త్‌కేర్ అవసరాలు</h3><p data-i18n="serviceTwoText">రోజువారీ ఆరోగ్య సంరక్షణకు ఉపయోగపడే ఉత్పత్తుల గురించి తెలుసుకోండి.</p><a href="#orderForm" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
+        <article class="service-card"><div class="service-card-top"><span class="service-icon">⌂</span><span>03 / 04</span></div><h3 data-i18n="serviceThreeTitle">బేబీ &amp; పర్సనల్ కేర్</h3><p data-i18n="serviceThreeText">బేబీ కేర్, పరిశుభ్రత మరియు వ్యక్తిగత సంరక్షణ ఉత్పత్తుల లభ్యత అడగండి.</p><a href="#orderForm" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
+        <article class="service-card"><div class="service-card-top"><span class="service-icon">▤</span><span>04 / 04</span></div><h3 data-i18n="serviceFourTitle">నిరంతర మందుల అవసరాలు</h3><p data-i18n="serviceFourText">BP, డయాబెటిస్ వంటి దీర్ఘకాలిక అవసరాల మందుల లభ్యత గురించి సంప్రదించండి.</p><a href="#orderForm" class="text-link"><span data-i18n="serviceLink">వివరాలు పంపండి</span><span>↗</span></a></article>
       </div>
       <div class="service-disclaimer"><span>ⓘ</span><p data-i18n="serviceDisclaimer">మందుల లభ్యత స్టాక్‌పై ఆధారపడి ఉంటుంది. ప్రిస్క్రిప్షన్ అవసరమైన మందులకు చెల్లుబాటు అయ్యే వైద్యుని ప్రిస్క్రిప్షన్ అవసరం. ఈ వెబ్‌సైట్ వైద్య సలహా లేదా నిర్ధారణ ఇవ్వదు.</p></div>
     </section>
@@ -116,10 +118,61 @@
       </figure>
     </section>
 
+    <section class="recurring-section wrap" id="monthly-delivery">
+      <div class="recurring-intro">
+        <div class="section-kicker"><span>03</span><span data-i18n="monthlyKicker">నెలవారీ డెలివరీ</span></div>
+        <h2 data-i18n="monthlyTitle">ప్రతి నెలా మందులు<br><em>ఇంటివద్దకే అందేలా.</em></h2>
+        <p data-i18n="monthlyIntro">వృద్ధులు మరియు క్రమం తప్పకుండా మందులు అవసరమయ్యే వారి కోసం నెలవారీ డోర్ డెలివరీ అభ్యర్థన పంపండి. షెడ్యూల్‌ను ఫార్మసీ ఫోన్‌లో నిర్ధారిస్తుంది.</p>
+        <div class="monthly-points"><span>✓ <span data-i18n="monthlyPointOne">ఒకసారి వివరాలు పంపండి</span></span><span>✓ <span data-i18n="monthlyPointTwo">ప్రతి నెలా కావాల్సిన మందుల జాబితా</span></span><span>✓ <span data-i18n="monthlyPointThree">డెలివరీ తేదీని ముందుగానే అభ్యర్థించండి</span></span></div>
+      </div>
+      <form class="monthly-card" id="monthlyForm" novalidate>
+        <div class="order-card-heading"><div><span class="form-overline">GOWRI MEDICALS · MONTHLY SERVICE</span><h3 data-i18n="monthlyFormHeading">నెలవారీ డెలివరీ నమోదు</h3></div><span class="form-cross">⌂</span></div>
+        <p class="monthly-note" data-i18n="monthlyNote">ఇది డెలివరీ షెడ్యూల్ కోసం అభ్యర్థన మాత్రమే. మందుల లభ్యత, ధర, డెలివరీ ప్రాంతం మరియు తేదీని షాప్ బృందం నిర్ధారిస్తుంది.</p>
+        <div class="form-grid">
+          <label class="form-field"><span data-i18n="monthlyCustomerLabel">ఎవరి కోసం? *</span><select id="monthlyFor" required><option value="Senior citizen">వృద్ధుల కోసం / Senior citizen</option><option value="Regular monthly medicine needs">నెలవారీ మందుల అవసరాలు / Regular monthly needs</option><option value="Family member / caregiver">కుటుంబ సభ్యుడు / సంరక్షకుడు</option></select></label>
+          <label class="form-field"><span data-i18n="monthlyNameLabel">మందులు తీసుకునే వ్యక్తి పేరు *</span><input id="monthlyName" type="text" maxlength="70" required placeholder="Full name"></label>
+        </div>
+        <div class="form-grid">
+          <label class="form-field"><span data-i18n="monthlyContactLabel">సంప్రదించాల్సిన వ్యక్తి ఫోన్ *</span><input id="monthlyPhone" type="tel" inputmode="tel" maxlength="18" required placeholder="10-digit mobile number"></label>
+          <label class="form-field"><span data-i18n="monthlyAltLabel">ప్రత్యామ్నాయ ఫోన్ (ఐచ్ఛికం)</span><input id="monthlyAltPhone" type="tel" inputmode="tel" maxlength="18" placeholder="Optional mobile number"></label>
+        </div>
+        <label class="form-field"><span data-i18n="monthlyAddressLabel">పూర్తి డెలివరీ చిరునామా / ల్యాండ్‌మార్క్ *</span><textarea id="monthlyAddress" rows="2" maxlength="250" required placeholder="House no., street, area, landmark"></textarea></label>
+        <div class="form-grid">
+          <label class="form-field"><span data-i18n="monthlyDayLabel">ప్రతి నెలా కోరుకునే డెలివరీ తేదీ *</span><select id="monthlyDay" required><option value="1">1వ తేదీ</option><option value="5">5వ తేదీ</option><option value="10">10వ తేదీ</option><option value="15">15వ తేదీ</option><option value="20">20వ తేదీ</option><option value="25">25వ తేదీ</option><option value="28">28వ తేదీ</option></select></label>
+          <label class="form-field"><span data-i18n="monthlyStartLabel">ఏ నెల నుంచి ప్రారంభించాలి? *</span><input id="monthlyStart" type="month" required></label>
+        </div>
+        <label class="form-field"><span data-i18n="monthlyMedicinesLabel">ప్రతి నెలా అవసరమయ్యే మందులు / పరిమాణం *</span><textarea id="monthlyMedicines" rows="4" maxlength="1200" required placeholder="Medicine name, strength, quantity... "></textarea></label>
+        <label class="form-field"><span data-i18n="monthlyNotesLabel">ఇతర సూచనలు (ఐచ్ఛికం)</span><textarea id="monthlyNotes" rows="2" maxlength="500" placeholder="Preferred time, gate/access notes, caregiver details..."></textarea></label>
+        <div class="prescription-instruction"><span class="prescription-instruction-icon">📎</span><p data-i18n="monthlyPrescription">ప్రిస్క్రిప్షన్ ఉంటే WhatsApp చాట్‌లో PDF లేదా ఫోటోగా జత చేయండి. మందుల మార్పుల కోసం మీ వైద్యుడిని సంప్రదించండి.</p></div>
+        <button class="button button-submit" type="submit"><span class="submit-wa">◉</span><span data-i18n="monthlySubmit">నెలవారీ డెలివరీ అభ్యర్థన పంపండి</span><span class="button-arrow">↗</span></button>
+        <p class="form-status" id="monthlyStatus" role="status" aria-live="polite" data-i18n="monthlyFootnote">ఈ ఫారమ్ వివరాలను ఈ వెబ్‌సైట్‌లో నిల్వ చేయదు. WhatsAppలో తెరుచుకున్న సందేశాన్ని పరిశీలించి Send నొక్కండి. షెడ్యూల్ నిర్ధారణ కోసం షాప్‌ను సంప్రదించండి.</p>
+      </form>
+    </section>
+
+    <section class="payment-section wrap" id="payment">
+      <div class="payment-intro">
+        <div class="section-kicker"><span>04</span><span data-i18n="paymentKicker">చెల్లింపు</span></div>
+        <h2 data-i18n="paymentTitle">సులభమైన<br><em>UPI చెల్లింపులు.</em></h2>
+        <p data-i18n="paymentIntro">షాప్ మీ ఆర్డర్‌ను నిర్ధారించి తుది మొత్తాన్ని తెలిపిన తర్వాత మాత్రమే చెల్లించండి.</p>
+        <div class="payment-upi-id"><div><small data-i18n="upiIdLabel">Gowri Medicals UPI ID</small><strong id="upiIdText">8688577287@apl</strong></div><button type="button" class="copy-upi" id="copyUpi" data-i18n="copyUpi">కాపీ</button></div>
+        <p class="payment-status" id="upiStatus" role="status" aria-live="polite"></p>
+        <a class="button button-primary upi-app-button" id="upiPayButton" href="upi://pay?pa=8688577287%40apl&amp;pn=Gowri%20Medicals&amp;cu=INR"><span data-i18n="openUpi">UPI యాప్‌లో చెల్లించండి</span><span class="button-arrow">↗</span></a>
+        <p class="payment-caution" data-i18n="paymentCaution">చెల్లించే ముందు ఫార్మసీ నిర్ధారించిన మొత్తాన్ని UPI యాప్‌లో నమోదు చేయండి. చెల్లింపు విజయవంతమైందని ఈ వెబ్‌సైట్ స్వయంగా నిర్ధారించదు.</p>
+      </div>
+      <div class="upi-qr-card">
+        <div class="upi-qr-heading"><span class="upi-qr-icon">▦</span><div><strong data-i18n="qrHeading">QR కోడ్ స్కాన్ చేయండి</strong><small data-i18n="qrSubheading">ఏదైనా UPI యాప్ ఉపయోగించండి</small></div></div>
+        <div class="upi-qr-frame">
+          <img id="upiQrImage" src="assets/gowri-medicals-upi-qr.jpg" alt="Gowri Medicals UPI payment QR code" loading="lazy">
+          <div id="upiQrPlaceholder" class="upi-qr-placeholder"><span>▦</span><strong data-i18n="qrPlaceholderTitle">మీ UPI QR చిత్రం ఇక్కడ కనిపిస్తుంది</strong><small data-i18n="qrPlaceholderText">మీ చిత్రాన్ని assets/gowri-medicals-upi-qr.jpg పేరుతో ఉంచండి.</small></div>
+        </div>
+        <p class="upi-qr-caption" data-i18n="qrCaption">QR కోడ్‌ను స్కాన్ చేసి, చెల్లించే ముందు పేరు మరియు మొత్తాన్ని తనిఖీ చేయండి.</p>
+      </div>
+    </section>
+
     <section class="booking-section" id="booking">
       <div class="booking-wrap wrap">
         <div class="booking-story">
-          <div class="section-kicker"><span>03</span><span data-i18n="bookingKicker">WhatsApp ఆర్డర్</span></div>
+          <div class="section-kicker"><span>05</span><span data-i18n="bookingKicker">WhatsApp ఆర్డర్</span></div>
           <h2 data-i18n="bookingTitle">మీకు కావలసిన<br><em>మందుల వివరాలు పంపండి.</em></h2>
           <p data-i18n="bookingDescription">మీ వివరాలు మరియు మందుల అవసరాన్ని నమోదు చేయండి. మీ సందేశం WhatsAppలో సిద్ధమవుతుంది; పంపే ముందు మీరు దాన్ని పరిశీలించవచ్చు.</p>
           <div class="steps">
@@ -168,7 +221,7 @@
 
     <section class="location-section wrap" id="location">
       <div class="location-copy">
-        <div class="section-kicker"><span>04</span><span data-i18n="locationKicker">మమ్మల్ని సందర్శించండి</span></div>
+        <div class="section-kicker"><span>06</span><span data-i18n="locationKicker">మమ్మల్ని సందర్శించండి</span></div>
         <h2 data-i18n="locationTitle">మీ పరిసరాల్లో<br><em>గౌరి మెడికల్స్.</em></h2>
         <p data-i18n="locationDescription">బలగ మెట్టు మెయిన్ రోడ్, శ్రీకాకుళం. దారి తెలుసుకోవడానికి Google Mapsలో చిరునామా సెర్చ్ చేయండి.</p>
         <div class="address-panel"><span class="address-pin">⌖</span><div><small data-i18n="addressCaption">షాప్ చిరునామా</small><strong>Balaga Mettu Main Road<br>Srikakulam, Andhra Pradesh – 532001</strong></div></div>
@@ -183,7 +236,7 @@
 
     <section class="contact-section" id="contact">
       <div class="contact-wrap wrap">
-        <div><div class="section-kicker"><span>05</span><span data-i18n="contactKicker">సంప్రదించండి</span></div><h2 data-i18n="contactTitle">మీకు సహాయం కావాలా?<br><em>మాతో మాట్లాడండి.</em></h2><p data-i18n="contactDescription">మందుల లభ్యత, డెలివరీ లేదా షాప్ వివరాల కోసం మమ్మల్ని సంప్రదించండి.</p></div>
+        <div><div class="section-kicker"><span>07</span><span data-i18n="contactKicker">సంప్రదించండి</span></div><h2 data-i18n="contactTitle">మీకు సహాయం కావాలా?<br><em>మాతో మాట్లాడండి.</em></h2><p data-i18n="contactDescription">మందుల లభ్యత, డెలివరీ లేదా షాప్ వివరాల కోసం మమ్మల్ని సంప్రదించండి.</p></div>
         <div class="contact-list">
           <a class="contact-row" href="tel:+919989105144"><span class="contact-symbol">☎</span><span><small data-i18n="mainPhoneLabel">ప్రధాన ఫోన్ / WhatsApp</small><strong>+91 99891 05144</strong></span><b>↗</b></a>
           <a class="contact-row" href="tel:+919985358726"><span class="contact-symbol">☎</span><span><small data-i18n="alternatePhoneLabel">ప్రత్యామ్నాయ ఫోన్</small><strong>+91 99853 58726</strong></span><b>↗</b></a>
@@ -201,7 +254,7 @@
   </footer>
   <div class="mobile-actionbar" aria-label="Quick actions">
     <a href="tel:+919989105144" class="mobile-call"><span>☎</span><span data-i18n="mobileCall">కాల్ చేయండి</span></a>
-    <a href="#booking" class="mobile-order"><span>◉</span><span data-i18n="mobileOrder">WhatsApp ఆర్డర్</span><b>↗</b></a>
+    <a href="#orderForm" class="mobile-order"><span>◉</span><span data-i18n="mobileOrder">WhatsApp ఆర్డర్</span><b>↗</b></a>
   </div>
   <script src="script.js" defer></script>
 </body>
