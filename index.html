@@ -124,10 +124,10 @@
           <p data-i18n="bookingDescription">మీ వివరాలు మరియు మందుల అవసరాన్ని నమోదు చేయండి. మీ సందేశం WhatsAppలో సిద్ధమవుతుంది; పంపే ముందు మీరు దాన్ని పరిశీలించవచ్చు.</p>
           <div class="steps">
             <div class="step"><span>01</span><p data-i18n="stepOne">మీ పేరు, ఫోన్ నంబర్ మరియు ప్రాంతం నమోదు చేయండి.</p></div>
-            <div class="step"><span>02</span><p data-i18n="stepTwo">మందుల వివరాలు రాయండి లేదా ప్రిస్క్రిప్షన్ ఫైల్ ఎంచుకోండి.</p></div>
+            <div class="step"><span>02</span><p data-i18n="stepTwo">మందుల వివరాలు రాయండి. ప్రిస్క్రిప్షన్ ఉంటే WhatsApp తెరిచిన తర్వాత PDF లేదా ఫోటో జత చేయండి.</p></div>
             <div class="step"><span>03</span><p data-i18n="stepThree">WhatsAppలో వివరాలు పరిశీలించి Send నొక్కండి.</p></div>
           </div>
-          <div class="privacy-note"><span class="privacy-icon">◇</span><div><strong data-i18n="privacyTitle">మీ ఫైల్ వెబ్‌సైట్‌లో అప్‌లోడ్ కాదు</strong><p data-i18n="privacyText">ఈ ఉచిత స్టాటిక్ సైట్ ఫైళ్లను సర్వర్‌లో నిల్వ చేయదు. ఫోన్ మద్దతు ఇస్తే, మీ ఫైల్‌ను పరికరం Share menu ద్వారా WhatsAppకు పంపవచ్చు.</p></div></div>
+          <div class="privacy-note"><span class="privacy-icon">◇</span><div><strong data-i18n="privacyTitle">ప్రిస్క్రిప్షన్‌ను WhatsAppలో జత చేయండి</strong><p data-i18n="privacyText">WhatsApp బటన్ నొక్కిన తర్వాత చాట్‌లో 📎 అటాచ్‌మెంట్‌ను ఎంచుకోండి → Document లేదా Gallery → మీ ప్రిస్క్రిప్షన్ PDF / ఫోటో ఎంచుకుని Send నొక్కండి.</p></div></div>
         </div>
 
         <form class="order-card" id="orderForm" novalidate>
@@ -154,18 +154,14 @@
           </div>
           <label class="form-field" id="addressWrap" hidden><span data-i18n="addressLabel">పూర్తి చిరునామా</span><input id="address" name="address" maxlength="180" placeholder="House number, street, landmark"></label>
           <label class="form-field"><span data-i18n="medicineLabel">మందుల పేర్లు / అవసరమైన వివరాలు *</span><textarea id="medicines" name="medicines" rows="4" maxlength="1200" required placeholder="Medicine name, strength, quantity or other details..."></textarea></label>
-          <div class="form-field file-field"><span data-i18n="prescriptionLabel">ప్రిస్క్రిప్షన్ ఫైల్ (ఐచ్ఛికం)</span>
-            <label class="file-picker" for="prescription"><span class="upload-symbol">↑</span><span class="file-copy"><strong data-i18n="fileTitle">ఫోటో లేదా PDF ఎంచుకోండి</strong><small data-i18n="fileLimit">JPG, PNG లేదా PDF · గరిష్ఠం 10 MB / ఫైల్</small></span><span class="browse-label" data-i18n="browse">ఎంచుకోండి</span></label>
-            <input class="file-input" id="prescription" type="file" accept="image/jpeg,image/png,application/pdf" multiple>
-            <div class="selected-files" id="selectedFiles" hidden></div>
-          </div>
+          <div class="prescription-instruction"><span class="prescription-instruction-icon">📎</span><p data-i18n="prescriptionInstruction">ప్రిస్క్రిప్షన్ పంపాలా? ముందుగా WhatsApp బటన్ నొక్కండి. చాట్ తెరిచిన తర్వాత 📎 → Document / Gallery నొక్కి PDF లేదా ఫోటో జత చేసి Send చేయండి.</p></div>
           <fieldset class="delivery-field"><legend data-i18n="deliveryLabel">మీకు ఏ విధంగా కావాలి?</legend>
             <label class="delivery-option"><input type="radio" name="delivery" value="Home delivery" checked><span><b>⌂</b><span data-i18n="homeDelivery">హోమ్ డెలివరీ</span></span></label>
             <label class="delivery-option"><input type="radio" name="delivery" value="Shop pickup"><span><b>▣</b><span data-i18n="shopPickup">షాప్ పికప్</span></span></label>
           </fieldset>
           <label class="urgent-option"><input type="checkbox" id="urgent"><span class="fake-check">✓</span><span data-i18n="urgentLabel">ఇది అత్యవసర అభ్యర్థన</span></label>
           <button class="button button-submit" id="submitButton" type="submit"><span class="submit-wa">◉</span><span data-i18n="submitLabel">WhatsAppలో అభ్యర్థన పంపండి</span><span class="button-arrow">↗</span></button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite" data-i18n="formFootnote">WhatsApp తెరుచుకున్న తర్వాత సందేశం, ఫైళ్లను పరిశీలించి మీరు స్వయంగా Send నొక్కాలి. ఆర్డర్ ఇంకా నిర్ధారించబడలేదు.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite" data-i18n="formFootnote">WhatsApp తెరుచుకున్న తర్వాత సందేశాన్ని పరిశీలించి Send నొక్కండి. ప్రిస్క్రిప్షన్ ఉంటే ముందుగా PDF / ఫోటో జత చేయండి. ఆర్డర్ ఇంకా నిర్ధారించబడలేదు.</p>
         </form>
       </div>
     </section>

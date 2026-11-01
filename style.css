@@ -13,3 +13,5 @@
 .contact-footnote{margin:2px 2px 0;color:var(--muted-2);font-size:8px;line-height:1.7}
 
 .location-share{margin:-2px 0 15px}.location-button{display:inline-flex;align-items:center;gap:9px;min-height:39px;padding:0 13px;border:1px solid var(--line);border-radius:9px;background:var(--panel-2);color:var(--green);font-family:inherit;font-size:10px;font-weight:700;cursor:pointer;transition:border-color .2s,background .2s}.location-button:hover{border-color:var(--green);background:var(--panel)}.location-button:disabled{opacity:.6;cursor:wait}.location-button>span:first-child{font-size:17px}.location-status{margin:6px 1px 0;color:var(--muted-2);font-size:8px;line-height:1.6}.location-status.location-found{color:var(--green)}
+
+.prescription-instruction{display:flex;align-items:flex-start;gap:10px;margin:-2px 0 16px;padding:12px 13px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}.prescription-instruction-icon{flex:0 0 auto;font-size:17px;line-height:1.5}.prescription-instruction p{margin:0;color:var(--muted);font-size:9px;line-height:1.8}
