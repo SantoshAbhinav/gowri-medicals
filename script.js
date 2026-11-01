@@ -181,22 +181,64 @@ $("monthlyForm").addEventListener("submit", event => {
 
 // UPI payment helpers. No amount is pre-filled; the pharmacy confirms the bill first.
 const upiQrImage = $("upiQrImage");
-if (upiQrImage) {
-  upiQrImage.addEventListener("load", () => { upiQrImage.classList.add("is-ready"); $("upiQrPlaceholder").hidden = true; });
-  upiQrImage.addEventListener("error", () => { upiQrImage.classList.remove("is-ready"); $("upiQrPlaceholder").hidden = false; });
-}
-$("copyUpi").addEventListener("click", async () => {
-  const value = "8688577287@apl";
-  const status = $("upiStatus");
-  try {
-    if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value);
-    else {
-      const temp = document.createElement("textarea"); temp.value = value; temp.style.position = "fixed"; temp.style.opacity = "0"; document.body.appendChild(temp); temp.select();
-      const copied = document.execCommand("copy"); temp.remove(); if (!copied) throw new Error("Copy failed");
+const upiQrPlaceholder = $("upiQrPlaceholder");
+
+if (upiQrImage && upiQrPlaceholder) {
+  const showQr = () => {
+    upiQrImage.classList.add("is-ready");
+    upiQrPlaceholder.hidden = true;
+  };
+
+  const showPlaceholder = () => {
+    upiQrImage.classList.remove("is-ready");
+    upiQrPlaceholder.hidden = false;
+  };
+
+  upiQrImage.addEventListener("load", showQr);
+  upiQrImage.addEventListener("error", showPlaceholder);
+
+  // Handle the case where the image loaded before JavaScript registered the event.
+  if (upiQrImage.complete) {
+    if (upiQrImage.naturalWidth > 0) {
+      showQr();
+    } else {
+      showPlaceholder();
     }
-    status.textContent = copy[lang].upiCopied;
-  } catch (_) { status.textContent = copy[lang].upiCopyFail; }
-});
+  }
+}
+
+// Copy UPI ID
+const copyUpiButton = $("copyUpi");
+
+if (copyUpiButton) {
+  copyUpiButton.addEventListener("click", async () => {
+    const value = "8688577287@apl";
+    const status = $("upiStatus");
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+      } else {
+        const temp = document.createElement("textarea");
+        temp.value = value;
+        temp.style.position = "fixed";
+        temp.style.opacity = "0";
+        document.body.appendChild(temp);
+        temp.select();
+
+        const copied = document.execCommand("copy");
+        temp.remove();
+
+        if (!copied) throw new Error("Copy failed");
+      }
+
+      if (status) status.textContent = copy[lang].upiCopied;
+
+    } catch (error) {
+      if (status) status.textContent = copy[lang].upiCopyFail;
+    }
+  });
+}
 
 applyLanguage("te");
 applyTheme("dark");
